@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	list-style: none;
+	text-decoration: none;
+}	
+body{
+	height: 100vh;
+	background: url(12.jpg) no-repeat;
+	background-size: cover;
+	background-position:
+	center;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: gray;
+	display: flex;
+	justify-content: space-between;
+	align-aitems: center;
+	padding: 0 8%;
+	box-shadow: 0 5px 10px;
+}
+header .Kirakat {
+	font-size: 40px;
+	font-weight: 900;
+	color: #000;
+	transition: .5s;
+	margin-top: 20px;
+}
+
+
+
+header .Kirakat:hover{
+	transform: scale(1.2);
+	color: gold;
+}
+header nav ul li{
+	position: relative;
+	float: left;
+	margin: 10px;
+}
+
+header nav ul li a {
+	padding: 16px;
+	margin-top: 14px;
+	color: #000;
+	font-size: 16px;
+	display: block;
+}
+
+header nav ul li a:hover{
+	background: #000;
+	color: gold;
+	transition: .5s;
+}
+nav ul li ul{
+	position: absolute;
+	left: 0;
+	width: 180px;
+	background: #fff;
+	display: none;
+}
+
+nav ul li ul li {
+	width: 90%;
+	border: 1px solid rgba(0,0,0,.1);
+
+}
+
+nav ul li ul li ul {
+	left: 160px;
+	top: 0;
+}
+
+nav ul li:hover > ul {
+	display: initial;
+}
+.logo:hover{
+	transform: scale(1.1);
+	transition: .3s;
+	border: 1px solid gold;
+}
